@@ -1,2 +1,2 @@
 [workspace]
-members = ["operating-system-overview", "process-management"]
+members = ["operating-system-overview", "process-management", "process-scheduler", "memory-management"]
