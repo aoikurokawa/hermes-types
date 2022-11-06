@@ -1,3 +1,5 @@
+use nix::libc::posix_spawn;
+use nix::sys::signal;
 use nix::sys::wait::wait;
 use nix::unistd::ForkResult::{Child, Parent};
 use nix::unistd::{execve, fork, getpid, getppid};
@@ -50,6 +52,19 @@ fn fork_and_exec() {
     }
 }
 
+fn practice_spawn() {}
+
+fn int_ignore() {
+    unsafe {
+        signal::signal(signal::SIGINT, signal::SigHandler::SigIgn).unwrap();
+    }
+
+    loop {
+        continue;
+    }
+}
+
 fn main() {
-    fork_and_exec();
+    //fork_and_exec();
+    int_ignore();
 }
