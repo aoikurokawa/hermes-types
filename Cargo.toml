@@ -4,3 +4,12 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+anyhow = "1.0.86"
+base64 = "0.22.1"
+borsh = { version = "1.5.1", features = ["derive"] }
+derive_more = { version = "0.99.18", features = ["deref", "deref_mut"] }
+hex = { version = "0.4.3", features = ["serde"] }
+pyth-sdk = { git = "https://github.com/pyth-network/pyth-sdk-rs", version = "0.8.0" }
+serde = { version = "1.0.204", features = ["derive"] }
+serde_json = "1.0.120"
+wormhole-sdk = { git = "https://github.com/wormhole-foundation/wormhole", tag = "v2.17.1" }
