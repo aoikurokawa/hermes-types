@@ -1,2 +1,6 @@
-[workspace]
-members = ["operating-system-overview", "process-management", "process-scheduler", "memory-management"]
+[package]
+name = "hermes-types"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
