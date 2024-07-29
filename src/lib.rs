@@ -328,8 +328,3 @@ impl std::fmt::Display for AssetType {
         write!(f, "{:?}", self)
     }
 }
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-pub struct StreamResponse {
-    pub data: PriceUpdate,
-}
